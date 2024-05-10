@@ -1,0 +1,6 @@
+E:\Trainnings\FirstAmerican\DotNet\CSharp\Demos\FirstConsoleApp\CalculatorLib\bin\Debug\CalculatorLib.dll
+E:\Trainnings\FirstAmerican\DotNet\CSharp\Demos\FirstConsoleApp\CalculatorLib\bin\Debug\CalculatorLib.pdb
+E:\Trainnings\FirstAmerican\DotNet\CSharp\Demos\FirstConsoleApp\CalculatorLib\obj\Debug\CalculatorLib.csproj.AssemblyReference.cache
+E:\Trainnings\FirstAmerican\DotNet\CSharp\Demos\FirstConsoleApp\CalculatorLib\obj\Debug\CalculatorLib.csproj.CoreCompileInputs.cache
+E:\Trainnings\FirstAmerican\DotNet\CSharp\Demos\FirstConsoleApp\CalculatorLib\obj\Debug\CalculatorLib.dll
+E:\Trainnings\FirstAmerican\DotNet\CSharp\Demos\FirstConsoleApp\CalculatorLib\obj\Debug\CalculatorLib.pdb
