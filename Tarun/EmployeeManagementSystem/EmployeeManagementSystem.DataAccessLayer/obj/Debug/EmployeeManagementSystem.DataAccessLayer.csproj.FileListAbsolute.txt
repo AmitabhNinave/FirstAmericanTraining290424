@@ -1,0 +1,11 @@
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\bin\Debug\EmployeeManagementSystem.DataAccessLayer.dll
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\bin\Debug\EmployeeManagementSystem.DataAccessLayer.pdb
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\bin\Debug\EmployeeManagementSystem.Entities.dll
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\bin\Debug\EmployeeManagementSystem.Exceptions.dll
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\bin\Debug\EmployeeManagementSystem.Entities.pdb
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\bin\Debug\EmployeeManagementSystem.Exceptions.pdb
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\obj\Debug\EmployeeManagementSystem.DataAccessLayer.csproj.AssemblyReference.cache
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\obj\Debug\EmployeeManagementSystem.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\obj\Debug\Employee.43C8282B.Up2Date
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\obj\Debug\EmployeeManagementSystem.DataAccessLayer.dll
+C:\src\EmployeeManagementSystem\EmployeeManagementSystem.DataAccessLayer\obj\Debug\EmployeeManagementSystem.DataAccessLayer.pdb
