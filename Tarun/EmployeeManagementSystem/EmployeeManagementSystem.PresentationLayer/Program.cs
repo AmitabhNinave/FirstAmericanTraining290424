@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using EmployeeManagementSystem.BusinessLayer;
 using EmployeeManagementSystem.Entities;
 using EmployeeManagementSystem.Exceptions;
@@ -11,9 +9,19 @@ namespace EmployeeManagementSystem.PresentationLayer
 {
     internal class Program
     {
+        [DllImport("Kernel32.dll")]
+        public static extern bool SetConsoleCtrlHandler(HandlerRoutine handler, bool add);
+        public delegate bool HandlerRoutine(CtrlTypes ctrlType);
+        public enum CtrlTypes
+        {
+            CTRL_CLOSE_EVENT = 2
+        }
         static void Main(string[] args)
         {
             EmployeeBL.DeserializationBAL();
+            Console.CancelKeyPress += new ConsoleCancelEventHandler(SerializationDel);
+
+            SetConsoleCtrlHandler(Serialization, true);
 
             int choice;
             do
@@ -39,12 +47,41 @@ namespace EmployeeManagementSystem.PresentationLayer
                         DeleteEmployee();
                         break;
                     case 6:
+                        Serialization(CtrlTypes.CTRL_CLOSE_EVENT);
                         break;
                     default:
                         Console.WriteLine("Invalid Input");
                         break;
                 }
             } while (choice != 6);
+        }
+
+        static void SerializationDel(object sender, ConsoleCancelEventArgs e)
+        {
+            try
+            {
+                EmployeeBL.SerializationBAL();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        static bool Serialization(CtrlTypes ctrlTypes)
+        {
+            try
+            {
+                if(ctrlTypes == CtrlTypes.CTRL_CLOSE_EVENT)
+                {
+                    EmployeeBL.SerializationBAL();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return true;
         }
 
         static void DeleteEmployee()
