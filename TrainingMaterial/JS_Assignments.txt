@@ -1,0 +1,25 @@
+1) Find the word SUV in the following sentence and print it on the document:
+	"This is the best SUV in the class."
+
+2) Replace all occurrences of a word "the" with "a" in the paragraph below:
+	"In the real world, people often overlook the importance of having a place to store all their stuff."
+
+3) Create an array of all the characters in the following string and display on the document on new line:
+"Hello World".
+
+4) Reverse the following string and display on the document:
+"Country"
+
+5) Round a number "up" to the nearest integer and display on the document:
+	4.4
+
+6) Return a random number between 0 and 10 and display on the document:
+
+7) Get current date from a system and add 30 days into it and display on the document.
+
+8) Convert the following array into a string and seperate each value with "-"
+var cities = ["Mumbai", "Kolkata", "Delhi", "Chennai"];
+
+9) Create an array of 4 images and display the images one after another on the page. Images should change after every 5 seconds.
+
+10) Create horizontal scrollable menu
