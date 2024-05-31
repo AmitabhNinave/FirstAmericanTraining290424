@@ -1,6 +1,0 @@
-C:\src\EmployeeManagementSystem\EmployeeManagementSystem.Entities\bin\Debug\EmployeeManagementSystem.Entities.dll
-C:\src\EmployeeManagementSystem\EmployeeManagementSystem.Entities\bin\Debug\EmployeeManagementSystem.Entities.pdb
-C:\src\EmployeeManagementSystem\EmployeeManagementSystem.Entities\obj\Debug\EmployeeManagementSystem.Entities.csproj.AssemblyReference.cache
-C:\src\EmployeeManagementSystem\EmployeeManagementSystem.Entities\obj\Debug\EmployeeManagementSystem.Entities.csproj.CoreCompileInputs.cache
-C:\src\EmployeeManagementSystem\EmployeeManagementSystem.Entities\obj\Debug\EmployeeManagementSystem.Entities.dll
-C:\src\EmployeeManagementSystem\EmployeeManagementSystem.Entities\obj\Debug\EmployeeManagementSystem.Entities.pdb
