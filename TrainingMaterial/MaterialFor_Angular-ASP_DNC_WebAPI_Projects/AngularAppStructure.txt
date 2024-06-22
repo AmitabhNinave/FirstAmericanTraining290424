@@ -1,0 +1,117 @@
+Angular Application (AirlineReservationSystem):
+===============================================
+
+1) MainModule:
+==============
+		bootstrap:module(AirlineReservationSystemModule)
+
+2) AirlineReservationSystemModule:
+==================================
+	bootstrap:component(HomeComponent)
+
+3) Components:
+==============
+
+a) -------HomeComponent:------
+	Linked Template (Home.html) ->
+			- Menu(Links)
+	 		- Flight (Home), Reservation (Home), ReportFlight (Home), 
+				ReportAirlineFlight (Home)
+	Refer to CSS/Bootstrap
+
+class FlightHomeComponent
+{
+	
+}
+
+b) -------FlightHomeComponent:------
+	Linked Template (FlightHome.html) ->
+			- Menu(Links)
+	 		- AddFlight, UpdateFlight, DeleteFlight, SearchFlight(*), ListFlights
+	Refer to CSS/Bootstrap
+
+class FlightHomeComponent
+{
+	
+}
+
+c) -------FlightListComponent:------
+	Linked Template (FlightList.html)
+	Refer to CSS/Bootstrap
+
+class FlightListComponent
+{
+	flights = FlightService.GetFlights()	
+}
+
+d) ------- AddFlightComponent:------
+	Linked Template (AddFlight.html)
+	Refer to CSS/Bootstrap
+
+class AddFlightComponent
+{
+	flight = (get newly created flight data from UI and store in the flight object)
+	FlightService.AddFlight(flight)	
+}
+
+e) ------- EditFlightComponent:------
+	Linked Template (EditFlight.html)
+	Refer to CSS/Bootstrap
+
+class EditFlightComponent
+{
+	flight = (get edited flight data from UI and store in the flight object)
+	FlightService.EditFlight(flight)	
+}
+
+f) ------- SearchFlightComponent:------
+	Linked Template (SearchFlight.html)
+	Refer to CSS/Bootstrap
+
+class SearchFlightComponent
+{
+	flight = (get edited flight data from UI and store in the flight object)
+	FlightService.EditFlight(flight)	
+}
+
+g) ------- DeleteFlightComponent:------
+	Linked Template (DeleteFlight.html)
+	Refer to CSS/Bootstrap
+
+class DeleteFlightComponent
+{
+	flightId = (get from UI and store in the flightId variable)
+	FlightService.DeleteFlight(flightId)	
+}
+
+
+4) Service:
+===========
+class FlightService
+{
+	- ListFlights()			--> HTTPClient(GetAsync)
+	- SearchFlight(int id)		--> HTTPClient(GetAsync)
+	- AddFlight(Flight objFlight)	--> HTTPClient(PostAsync)
+	- EditFlight(Flight objFlight)	--> HTTPClient(PutAsync)
+	- DeleteFlight(id flightId)	--> HTTPClient(DeleteAsync)
+}
+
+===================================== Created in the Sprint I ===============================
+ASP.Net Core Web API:
+---------------------
+FlightController:
+	- GetFlights
+	- GetFlight(int id)
+	- PostFlight(Flight objFlight)
+	- PutFlight(Flight objFlight)
+	- DeleteFlight(id flightId)
+
+EntityFramework:
+----------------
+	Flight
+	AirlineReservationDBContext
+
+Database:
+---------
+Table:
+	Flight
