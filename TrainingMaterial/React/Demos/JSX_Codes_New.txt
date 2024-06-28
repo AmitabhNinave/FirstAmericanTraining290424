@@ -1,0 +1,142 @@
+JSX Curly Braces:
+-----------------
+import './App.css';
+
+function App() {
+  const name = "Participants";
+ 
+  return (
+    <h1>
+        Hello,
+        {name}.Welcome to React training.
+    </h1>
+  );
+}
+
+export default App;
+
+
+JSX Conditional Expression:
+---------------------------
+// Filename - App.js
+ 
+import './App.css';
+
+function App() {
+  let i = 1;
+ 
+  const name = "Participants";
+ 
+  return (
+<h1>{i == 1 ? "Hello World!" : "False!"} </h1>
+  );
+}
+
+export default App;
+
+JSX Attributes:
+---------------
+// Filename - App.js 
+
+import './App.css';
+
+function App() {
+  let i = 1;
+ 
+  const name = "Participants";
+ 
+  return (
+    <div>
+        <h1 className="hello">Hello World!</h1>
+        <h2 data-sampleAttribute="sample">
+            Custom attribute
+        </h2>
+    </div>
+  );
+}
+
+export default App;
+
+JSX Specifying attribute values :
+---------------------------------
+For string literals: 
+--------------------
+import './App.css';
+
+function App() {
+  const ele = <h1 className = "firstAttribute">Hello: String Literal!</h1>;
+  return (
+    ele
+  );
+}
+
+export default App;
+
+For expressions:
+-----------------
+//const ele = <h1 className = {varName}>Hello!</h1>;
+
+Wrapping elements or Children in JSX
+------------------------------------
+Consider a situation where you want to render multiple tags at a time. To do this we need to wrap all of these tags under a parent tag and then render this parent element to the HTML.
+
+// Filename - App.js
+ 
+import './App.css';
+
+function App() {
+
+  return (
+    <div>
+        <h1>This is Heading 1 </h1>
+        <h2>This is Heading 2</h2>
+        <h3>This is Heading 3 </h3>
+    </div>
+
+  );
+}
+
+export default App;
+
+Comments in JSX :
+-------------------
+// Filename - App.js
+ 
+import './App.css';
+
+function App() {
+
+  return (
+    <div>
+        <h1>Hello World !{/*This is a comment*/}</h1>
+    </div>
+
+  );
+}
+
+export default App;
+
+Converting HTML to JSX
+----------------------
+HTML Code:
+-----------
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+    <title>Basic Web Page</title> 
+</head> 
+<body> 
+    <h1>Welcome to the React Tutorial</h1> 
+    <p>A computer science portal for learners</p> 
+</body> 
+ 
+</html>
+
+Converted JSX Code:
+-------------------
+<>
+  <title>Basic Web Page</title>
+  <h1>Welcome to React training</h1>
+  <p>A computer science portal for learners</p>
+</>

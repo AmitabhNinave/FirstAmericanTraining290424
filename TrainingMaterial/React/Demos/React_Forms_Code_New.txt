@@ -1,0 +1,99 @@
+React Forms
+===========
+Adding Forms in React
+----------------------
+import './App.css';
+import React from 'react';
+
+class App extends React.Component {
+   
+  onInputChange(event) {
+      console.log(event.target.value);
+  }
+ 
+  render() {
+      return (
+          <div>
+              <form>
+                  <label>Enter text</label>
+                  <input type="text"
+                      onChange={this.onInputChange}/>
+              </form>
+          </div>
+      );
+  }
+}
+
+export default App;
+--------------
+Submitting React Forms
+--------------
+import './App.css';
+import React from 'react';
+
+class App extends React.Component {
+  state = { inputValue: "" };
+
+  onFormSubmit = (event) => {
+      event.preventDefault();
+      this.setState({ inputValue: "Hello World!" });
+  };
+
+  render() {
+      return (
+          <div>
+              <form onSubmit={this.onFormSubmit}>
+                  <label> Enter text </label>
+                  <input
+                      type="text"
+                      value={this.state.inputValue}
+                      onChange={(e) =>
+                          this.setState({
+                              inputValue: e.target.value,
+                          })
+                      }
+                  />
+              </form>
+              <br />
+              <div>
+                  Entered Value: {this.state.inputValue}
+              </div>
+          </div>
+      );
+  }
+}
+export default App;
+
+preventDefault() used in React?
+The event. preventDefault() line prevents the form from actually submitting, giving you a chance to validate or process the input before submitting it to the server or updating the state of your React component. When the user clicks the "Submit" button, the input value is logged to the console.
+--------------
+Multiple Input Fields
+--------------
+
+
+
+==============
+StrictMode currently helps with:
+
+Identifying components with unsafe lifecycles
+Warning about legacy string ref API usage
+Warning about deprecated findDOMNode usage
+Detecting unexpected side effects
+Detecting legacy context API
+Ensuring reusable state
+================
+reportWebVitals();Measuring Performance
+-----------------------
+By default, Create React App includes a performance relayer that allows you to measure and analyze the performance of your application using different metrics.
+
+To measure any of the supported metrics, you only need to pass a function into the reportWebVitals function in index.js:
+
+reportWebVitals(console.log);
+==================
+createRoot
+createRoot lets you create a root to display React components inside a browser DOM node.
+
+const root = createRoot(domNode, options?)
+--------------
+What is a root?
+In React, a “root” is a pointer to the top-level data structure that React uses to track a tree to render.

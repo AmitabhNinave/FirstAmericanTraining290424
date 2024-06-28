@@ -1,0 +1,18 @@
+Components in React
+-------------------
+Function Component:
+-------------------
+function demoComponent() {
+    return (<h1>
+                Welcome Message!
+            </h1>);
+}
+
+Class Component in React
+-------------------------
+class Welcome extends Component {
+    render() {
+        return <h1>Hello, Welcome to React training!</h1>;
+    }
+}
+
